@@ -23,7 +23,7 @@
 
     <!-- Heading -->
     <div class="sidebar-heading">
-        MATA KULIAH
+        DATA PENGAMPU
     </div>
 
     <!-- Nav Item - Pages Collapse Menu -->
