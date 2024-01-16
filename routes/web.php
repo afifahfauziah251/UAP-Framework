@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\DosenController;
+use App\Http\Controllers\KuliahController;
+use App\Models\Kuliah;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +17,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.master');
 });
+
+Route::get('/dosen', [DosenController::class, 'index'])->name('dosen');
+
+Route::get('/tambahdosen', [DosenController::class, 'tambahdosen'])->name('tambahdosen');
+Route::post('/insertdata', [DosenController::class, 'insertdata'])->name('insertdata');
+
+Route::get('/tampilkandata/{id}', [DosenController::class, 'tampilkandata'])->name('tampilkandata');
+Route::post('/updatedata/{id}', [DosenController::class, 'updatedata'])->name('updatedata');
+
+Route::get('/delete/{id}', [DosenController::class, 'delete'])->name('delete');
+
+Route::get('/kuliah', [KuliahController::class, 'index'])->name('kuliah');
