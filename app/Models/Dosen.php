@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Dosen extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'nama',
+        'nip', // Tambahkan atribut lain yang perlu diisi massal
+        'foto',        // Tambahkan _token ke dalam fillable
+    ];
 }

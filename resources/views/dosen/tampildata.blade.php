@@ -24,6 +24,12 @@
                         <input type="number" name="nip" class="form-control" id="exampleInputEmail1"
                         arta-describedby="emailHelp" value="{{ $data->noizinpraktik }}">
                       </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Masukkan Foto</label>
+                        <input type="file" name="foto" class="form-control" id="exampleInputEmail1"
+                        arta-describedby="emailHelp" value="{{ $data->noizinpraktik }}">
+                    </div>
+
                     
                     <button type="submit" class="btn btn-primary">Edit</button>
                   </form>

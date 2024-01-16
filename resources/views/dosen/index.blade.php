@@ -20,8 +20,8 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Name</th>
-                        <th scope="col">Nip</th>
                         <th scope="col">Foto</th>
+                        <th scope="col">NIP</th>
                         <th scope="col">Dibuat</th>
                         <th scope="col">Aksi</th>
                     </tr>
